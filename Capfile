@@ -5,7 +5,6 @@ require "capistrano/scm/git"
 require 'capistrano/puma'
 require 'capistrano/rails'
 require 'capistrano/bundler'
-require 'capistrano/rails/migrations'
 require 'capistrano/rails/assets'
 require 'capistrano/chruby'
 # require 'capistrano/npm'
