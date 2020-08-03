@@ -41,8 +41,11 @@ end
 # Use unicorn as the app server
 gem 'puma'
 
-# Use Capistrano for deployment
-# gem 'capistrano', group: :development
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+group :development do
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.2'
+  gem 'capistrano-chruby'
+  gem 'capistrano3-puma'
+  gem 'capistrano-npm'
+end

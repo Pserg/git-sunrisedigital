@@ -28,13 +28,8 @@ class Request
 
   def compose_message(args={})
     args.each do |k, val|
-      key = I18n.t("activerecord.attributes.#{model_name}.#{k}")
+      key = I18n.t("activerecord.attributes.request.#{k}")
       @message += "#{key}:&nbsp;#{val}&nbsp;<br/>"
     end
   end
-  
-  def model_name
-    self.class.name.underscore.to_sym
-  end
-
 end
