@@ -1,4 +1,5 @@
 Rake::Task["deploy:assets:backup_manifest"].clear_actions
+Rake::Task["deploy:migrate"].clear_actions
 set :application, 'sunrise'
 set :repo_url, 'git@github.com:Pserg/git-sunrisedigital.git'
 set :deploy_to, '/home/deploy/sunrise'
